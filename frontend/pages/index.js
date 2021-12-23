@@ -44,7 +44,7 @@ export default class Index extends Component {
   async uploadMultipartFile() {
     try {
       console.log('Inside uploadMultipartFile')
-      const CHUNK_SIZE = 100 * 10024 * 10024//4000000000 // 10MB
+      const CHUNK_SIZE = 10 * 1024 * 1024//4000000000 // 10MB
       const fileSize = this.state.fileSelected.size
       const CHUNKS_COUNT = Math.floor(fileSize / CHUNK_SIZE) + 1
       let promisesArray = []
