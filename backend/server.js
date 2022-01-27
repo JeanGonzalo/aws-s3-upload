@@ -66,7 +66,8 @@ app.get('/get-upload-url', async (req, res) => {
 			Bucket: BUCKET_NAME,
 			Key: req.query.fileName,
 			PartNumber: req.query.partNumber,
-			UploadId: req.query.uploadId
+			UploadId: req.query.uploadId,
+			Expires: 8000
 		}
 
 		return new Promise(
