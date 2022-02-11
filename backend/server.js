@@ -4,7 +4,7 @@ const AWS = require('aws-sdk');
 
 const CONFIG = require('./config');
 const app = express()
-const port = 3000
+const port = 2000
 
 app.use(bodyParser.json())
 
@@ -66,7 +66,8 @@ app.get('/get-upload-url', async (req, res) => {
 			Bucket: BUCKET_NAME,
 			Key: req.query.fileName,
 			PartNumber: req.query.partNumber,
-			UploadId: req.query.uploadId
+			UploadId: req.query.uploadId,
+			Expires: 9000
 		}
 
 		return new Promise(

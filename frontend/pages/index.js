@@ -8,8 +8,8 @@ export default class Index extends Component {
       fileSelected: null,
       uploadId: '',
       fileName: '',
-      //backendUrl: 'http://localhost:3000'
-      backendUrl: 'http://ec2-18-221-223-134.us-east-2.compute.amazonaws.com:3000'
+      //backendUrl: 'https://tgvideos.net.pe'
+      backendUrl: 'https://unrsqziy8a.us-east-2.awsapprunner.com'
     }
   }
 
